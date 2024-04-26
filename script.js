@@ -21,7 +21,10 @@ window.addEventListener("message", (ev) => {
 function sendNewMessage() {
   document
     .getElementById("my-iframe")
-    .contentWindow.postMessage({ type: "NOVA_MENSAGEM!" }, "*");
+    .contentWindow.postMessage(
+      { type: "NOVA_MENSAGEM!", payload: "teste" },
+      "*"
+    );
 }
 
 function setCookies() {
