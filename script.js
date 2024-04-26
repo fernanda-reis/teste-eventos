@@ -27,4 +27,6 @@ function sendNewMessage() {
 function setCookies() {
   console.log("[[setando cookies]]");
   document.cookie = "teste=cookie_APP_DE_TESTE; path=/; SameSite=None; Secure";
+  document.cookie = "teste=cookie_APP_DE_TESTE2; path=/";
+  document.cookie = "teste=cookie_APP_DE_TESTE3";
 }
